@@ -5,9 +5,9 @@ There are two ways to use Shiba:
 - In private messages
 - In the spam channel
 
-In order to use Shiba in private messages, first add Shiba as a friend by going to its [profile page](https://www.bustabit.com/user/Shiba) on bustabit and then clicking the "Add to friends" button. Then, select Shiba from the list of chat channels at right of chat. Now you can send your commands directly to Shiba.
+In order to use Shiba in private messages, first add Shiba as a friend by going to its [profile page](https://moneypot.com/user/Shiba) on MoneyPot and then clicking the "Add to friends" button. Then, select Shiba from the list of chat channels at right of chat. Now you can send your commands directly to Shiba.
 
-Alternatively, you can use the public "spam" chat channel. First, click the plus button at the bottom right of chat, then select the [spam channel's flag](https://i.imgur.com/rp6jfPX.png). To send Shiba commands in the spam channel, prefix them with `!` or `#`.
+Alternatively, you can use the public "spam" chat channel. First, click the plus button at the bottom right of chat, then select the [spam channel's flag](https://imgur.com/qpgpfsS). To send Shiba commands in the spam channel, prefix them with `!` or `#`.
 
 ## Commands
 
@@ -41,7 +41,7 @@ Shows a player's rain stats. If no player is given, shows your own stats. The st
 
 `withdraw <amount>`
 
-Withdraw the given number of bits from your Shiba balance to your bustabit account.
+Withdraw the given number of bits from your Shiba balance to your MoneyPot account.
 
 ### Miscellaneous
 
@@ -59,7 +59,7 @@ Converts between Bitcoin and various fiat currencies. If no target currency is g
 
 #### fair
 
-Shows a link to an explanation of bustabit's provable fairness.
+Shows a link to an explanation of MoneyPot's provable fairness.
 
 #### help
 
@@ -107,8 +107,6 @@ Calculates the probability of a roll being in between the bounds specified by `x
 `urban <term>`
 
 Searches Urban Dictionary for a term.
-
-### bustabit-only
 
 #### average
 
@@ -189,7 +187,7 @@ Calculates a player's profit for the given duration. Duration can be either a nu
 - minute
 - second
 
-`!profit Daniel <duration>` returns the commission earned by bustabit itself and `!profit investors <duration>` returns the bankroll investors' profit.
+`!profit Leo <duration>` returns the commission earned by MoneyPot itself and `!profit investors <duration>` returns the bankroll investors' profit.
 
 **Example**: `!profit Ryan 100` to show the profit of the player Ryan in the past 100 games.
 
@@ -226,6 +224,24 @@ Calculates how much a player has wagered in the most recent duration. If the pla
 - hour
 - minute
 - second
+
+#### house edge
+
+`he <duration>`
+
+Calculates the average house edge for the given duration. Duration can be either a number of games or a duration using any of the following modifiers:
+
+- year
+- month
+- week
+- day
+- hour
+- minute
+- second
+
+To calculate multiple results, pass a comma-separated list of games or durations.
+
+**Example**: `!he 10, 100, 1000` to show the average house edge over the last 10, 100 and 1,000 games.
 
 ### Moderators
 
